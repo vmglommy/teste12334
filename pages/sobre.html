@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o Projeto | Viva Sua Profissão</title>
+  <meta name="description" content="Arquitetura do site, estrutura de navegação e justificativa técnica do projeto.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a href="../index.html" class="logo">Viva Sua <span>Profissão</span></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="habilidades.html">Habilidades &amp; Mercado</a></li>
+          <li><a href="materiais.html">Materiais &amp; E-book</a></li>
+          <li><a href="sobre.html" class="ativo">Sobre o Projeto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cabecalho-pagina">
+      <div class="container">
+        <h1>Sobre o Projeto &amp; Arquitetura</h1>
+        <p>Documentação das escolhas do grupo para a apresentação final (Aulas 7, 10 e 11).</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="grid-duas-colunas">
+          <div class="card">
+            <h2>Estrutura de Navegação (Mapa do Site)</h2>
+            <p>Organização das páginas HTML do portal:</p>
+            <ul class="lista-simples">
+              <li><code>index.html</code> — Visão geral da profissão e chamada principal</li>
+              <li><code>pages/habilidades.html</code> — Competências, trilha e mercado</li>
+              <li><code>pages/materiais.html</code> — Banner, esboço de landing page e e-book</li>
+              <li><code>pages/sobre.html</code> — Arquitetura, hospedagem e créditos</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Por que GitHub Pages? (Site Estático)</h2>
+            <p>
+              Este portal foi desenvolvido com <strong>HTML5 e CSS3</strong> como um <strong>site estático</strong>,
+              hospedado gratuitamente via <strong>GitHub Pages</strong>.
+            </p>
+            <p>
+              Diferente de sistemas em <strong>PHP ou WordPress</strong>, ele não exige processamento no servidor nem banco de dados
+              para exibir páginas informativas, garantindo carregamento rápido e versionamento via Git/GitHub.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Projeto <strong>Viva Sua Profissão</strong> — Curso Técnico em Desenvolvimento de Sistemas (Proz Educação)</p>
+      <p class="creditos">Desenvolvido pelo Grupo: [Nome 1], [Nome 2], [Nome 3]</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+/* =========================================================
+   TEMPLATE BASE — PROJETO VIVA SUA PROFISSÃO
+   Dica para os alunos: alterem as cores abaixo em :root
+   para personalizar a identidade visual do grupo!
+   ========================================================= */
+
+:root {
+  --cor-primaria: #1d4ed8;      /* Azul principal (mude para a cor da profissão!) */
+  --cor-primaria-escura: #1e3a8a;
+  --cor-destaque: #0ea5e9;
+  --cor-fundo: #ffffff;
+  --cor-fundo-suave: #f1f5f9;
+  --cor-texto: #1e293b;
+  --cor-texto-suave: #475569;
+  --cor-borda: #cbd5e1;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho e Navegação */
+.topo {
+  background-color: var(--cor-primaria-escura);
+  color: #ffffff;
+  padding: 16px 0;
+}
+
+.topo .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #93c5fd;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+}
+
+/* Hero (Banner Inicial) */
+.hero {
+  background: linear-gradient(135deg, var(--cor-primaria-escura), var(--cor-primaria));
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+.etiqueta {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.card .etiqueta {
+  background-color: #dbeafe;
+  color: var(--cor-primaria-escura);
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin-bottom: 14px;
+  max-width: 720px;
+}
+
+.hero p {
+  font-size: 1.08rem;
+  max-width: 680px;
+  margin-bottom: 24px;
+  color: #e2e8f0;
+}
+
+.botoes-hero {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primario {
+  background-color: #ffffff;
+  color: var(--cor-primaria-escura);
+}
+
+.secao .btn-primario,
+.card .btn-primario {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+/* Cabeçalho das Páginas Internas */
+.cabecalho-pagina {
+  background-color: var(--cor-fundo-suave);
+  padding: 40px 0;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.cabecalho-pagina h1 {
+  font-size: 1.8rem;
+  color: var(--cor-primaria-escura);
+  margin-bottom: 6px;
+}
+
+/* Seções e Grids */
+.secao {
+  padding: 48px 0;
+}
+
+.secao-cinza {
+  background-color: var(--cor-fundo-suave);
+}
+
+.secao-destaque {
+  background-color: var(--cor-primaria-escura);
+  color: #ffffff;
+  text-align: center;
+}
+
+.secao-destaque p {
+  max-width: 640px;
+  margin: 10px auto 22px;
+  color: #cbd5e1;
+}
+
+.secao h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: var(--cor-primaria-escura);
+}
+
+.secao-destaque h2 {
+  color: #ffffff;
+}
+
+.subtitulo {
+  color: var(--cor-texto-suave);
+  margin-bottom: 24px;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid-duas-colunas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.card h2,
+.card h3 {
+  color: var(--cor-primaria-escura);
+  margin-bottom: 10px;
+}
+
+.card p + p {
+  margin-top: 10px;
+}
+
+.lista-simples {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.lista-simples li {
+  margin-bottom: 8px;
+}
+
+/* Caixa reservada para Banner */
+.caixa-banner {
+  border: 2px dashed var(--cor-primaria);
+  background-color: var(--cor-fundo-suave);
+  border-radius: 10px;
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--cor-texto-suave);
+}
+
+.caixa-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Formulário simulado da Landing Page */
+.form-simulado {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.form-simulado label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.form-simulado input {
+  padding: 10px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.9rem;
+}
+
+.rodape .creditos {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
